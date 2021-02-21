@@ -10,7 +10,7 @@ import java.time.Period;
 
 @Entity
 @Getter @Setter
-public class Student implements Serializable { //buscar esta mierda.
+public class Student implements Serializable { //buscar serializable
 
     private static final long serialVersionUID = 3753050881099354647L;
     @Id
