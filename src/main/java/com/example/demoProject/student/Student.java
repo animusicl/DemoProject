@@ -1,12 +1,15 @@
 package com.example.demoProject.student;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.Period;
 
 @Entity
-
+@Getter @Setter
 public class Student implements Serializable { //buscar esta mierda.
 
     private static final long serialVersionUID = 3753050881099354647L;
@@ -56,34 +59,6 @@ public class Student implements Serializable { //buscar esta mierda.
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public LocalDate getDob() {
-        return dob;
-    }
-
-    public void setDob(LocalDate dob) {
-        this.dob = dob;
     }
 
     public Integer getAge(){
